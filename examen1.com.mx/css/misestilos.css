@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;             
+  justify-content: space-between;  
+  align-items: center;          
+  padding: 1rem 2rem;
+}
+
+.menu {
+  display: flex;                
+  gap: 1.5rem;                  
+  list-style: none;
+}
+
+.contenedor{
+  
+  display: flex;
+  gap: 1rem;
+  color: red;
+  
+}
+
+.columna{
+  flex: 1;
+  color: red;
+}
