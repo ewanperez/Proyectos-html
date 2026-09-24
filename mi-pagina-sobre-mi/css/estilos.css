@@ -1,11 +1,15 @@
-
+/* =========================================================
+   1. RESET UNIVERSAL
+   ========================================================= */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
+/* =========================================================
+   2. VARIABLES EN :root
+   ========================================================= */
 :root {
     --color-primario: #1D4ED8;
     --color-secundario: #0D9488;
@@ -31,11 +35,11 @@ body {
 
 .layout {
     display: grid;
-    
-    grid-template-columns: 3fr 1fr;
   
+    grid-template-columns: 3fr 1fr;
+    
     grid-template-rows: auto 1fr auto;
-   
+  
     grid-template-areas: 
         "header header"
         "main   aside"
@@ -47,16 +51,13 @@ body {
     padding: 1rem;
 }
 
-/* Asignación de elementos a las áreas de Grid */
 .header { grid-area: header; }
 .main   { grid-area: main; }
 .aside  { grid-area: aside; }
 .footer { grid-area: footer; }
 
 
-/* Flexbox */
 
-/* Header con Flexbox (Paso 7) */
 .header {
     display: flex;
     justify-content: space-between;
@@ -73,7 +74,7 @@ body {
     list-style: none;
 }
 
-/* Tarjetas de pasatiempos con Flexbox
+
 .pasatiempos-container {
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +90,7 @@ body {
     border: 1px solid #E2E8F0;
 }
 
-
+/* Aside con Flexbox vertical (Paso 9) */
 .aside {
     background-color: var(--color-superficie);
     padding: 1.5rem;
