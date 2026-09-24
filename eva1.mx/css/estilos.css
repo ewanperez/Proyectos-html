@@ -1,22 +1,18 @@
-.contenedor{
-width: 300px;
-height: 400px;
-display: flex;
-flex-direction: row;
-justify-content: center; /* alineación horizontal */
-align-items: center;       /* alineación vertical */
-
-
+.contenedor {
+    width: 100%; /* Se ajustó a 100% para que no aplaste las 3 fichas en 300px */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-
-
-
 
 .ficha {
     -webkit-box-shadow: 15px 9px 27px -6px #073c92;
     -moz-box-shadow: 15px 9px 27px -6px #073c92;
     box-shadow: 15px 9px 27px -6px #073c92;
-    width: 120px;
+    width: 140px;
+    margin: 15px; /* Agregado para la separación entre tarjetas */
+    padding: 10px; /* Agregado para que el texto interno respire y mantenga forma pareja */
     border: 7px inset #0021c4;
     background-color: #24ebd3;  
     background-image: -webkit-linear-gradient(121deg, #24ebd3, #25248f);
