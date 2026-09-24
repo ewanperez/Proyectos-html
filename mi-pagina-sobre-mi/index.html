@@ -4,72 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Sobre Mí</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-   
-    <header>
-        <h1>Mateo</h1>
-        <nav>
-            <ul>
-                <li><a href="#quien-soy">Quién soy</a></li>
-                <li><a href="#pasatiempos">Pasatiempos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
     
-    <main>
+    <div class="layout">
 
        
-        <section id="quien-soy">
-            <h2>Quién soy</h2>
-            <p>
-                Hola, soy Mateo. Me apasiona la <strong>tecnología</strong> y el desarrollo de software.
-                Actualmente me encuentro aprendiendo sobre inteligencia artificial y programación web.
-                Mi lema favorito es: 
-            </p>
-            
-            <blockquote>
-                <p>"El único modo de hacer un gran trabajo es amar lo que haces."</p>
-            </blockquote>
+        <header class="header">
+            <div class="logo">
+                <h1>Mateo</h1>
+            </div>
+            <nav class="navbar" aria-label="Menú principal">
+                <ul>
+                    <li><a href="#quien-soy">Quién soy</a></li>
+                    <li><a href="#pasatiempos">Pasatiempos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <figure>
-                <img src="foto-perfil.jpg" alt="Fotografía de perfil de Mateo">
-                <figcaption>Foto de perfil personal</figcaption>
-            </figure>
-        </section>
+    
+        <main class="main">
 
-        
-        <section id="pasatiempos">
-            <h2>Mis Pasatiempos</h2>
-
-            <article>
-                <h3>Ir al Gimnasio</h3>
+   
+            <section id="quien-soy" class="seccion">
+                <h2>Quién soy</h2>
                 <p>
-                    Me gusta mucho mantener una rutina constante de ejercicio y entrenamiento físico 
-                    para liberar estrés y mantenerme en forma.
+                    Hola, soy Mateo. Me apasiona la <strong>tecnología</strong> y el desarrollo de software.
+                    Actualmente me encuentro aprendiendo sobre inteligencia artificial y programación web.
+                    Mi lema favorito es:
                 </p>
-                <figure>
-                    <img src="gimnasio.jpg" alt="Instalaciones de un gimnasio con pesas">
-                    <figcaption>Entrenamiento de fuerza en el gimnasio</figcaption>
-                </figure>
-            </article>
+                
+                <blockquote>
+                    <p><em>"Los errores y fallas, son la mejor escuela"</em></p>
+                </blockquote>
 
-            <article>
-                <h3>Escuchar Música</h3>
-                <p>
-                    Disfruto mucho escuchar música mientras estudio o programo, especialmente rock en español e indie.
-                </p>
                 <figure>
-                    <img src="musica.jpg" alt="Audífonos sobre una superficie junto a un reproductor de música">
-                    <figcaption>Escuchando música en mis tiempos libres</figcaption>
+                    <img src="images/foto-perfil.jpg" alt="Fotografía de perfil de Mateo">
+                    <figcaption>Foto de perfil personal</figcaption>
                 </figure>
-            </article>
-        </section>
+            </section>
 
-        <aside>
+            <!-- Sección: Pasatiempos -->
+            <section id="pasatiempos" class="seccion">
+                <h2>Mis Pasatiempos</h2>
+
+                <div class="pasatiempos-container">
+                    <article class="card-pasatiempo">
+                        <h3>Ir al Gimnasio</h3>
+                        <p>
+                            Me gusta mucho mantener una rutina constante de ejercicio y entrenamiento físico 
+                            para liberar estrés y mantenerme en forma.
+                        </p>
+                        <figure>
+                            <img src="images/gimnasio.jpg" alt="Instalaciones de un gimnasio con pesas">
+                            <figcaption>Entrenamiento de fuerza en el gimnasio</figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="card-pasatiempo">
+                        <h3>Escuchar Música</h3>
+                        <p>
+                            Disfruto mucho escuchar música mientras estudio o programo, especialmente rock en español e indie.
+                        </p>
+                        <figure>
+                            <img src="images/musica.jpg" alt="Audífonos sobre una superficie junto a un reproductor de música">
+                            <figcaption>Escuchando música en mis tiempos libres</figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+
+  
+        <aside class="aside">
             <h3>Mis cursos favoritos</h3>
             <ul>
                 <li>Programación Web en <code>HTML5</code></li>
@@ -78,13 +96,13 @@
             </ul>
         </aside>
 
-    </main>
+        <footer id="contacto" class="footer">
+            <p>&copy; 2026 Mateo. Todos los derechos reservados.</p>
+            <p>Contacto: <a href="mailto:mateo@example.com">mateo@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">Mi Perfil de GitHub</a></p>
+        </footer>
 
-    <footer id="contacto">
-        <p>&copy; 2026 Mateo. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:mateo@example.com">mateo@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">Mi Perfil de GitHub</a></p>
-    </footer>
+    </div>
 
 </body>
 </html>

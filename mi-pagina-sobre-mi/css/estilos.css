@@ -1,0 +1,167 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --color-primario: #1D4ED8;
+    --color-secundario: #0D9488;
+    --color-fondo: #F8FAFC;
+    --color-superficie: #FFFFFF;
+    --color-texto: #0F172A;
+    --color-enlace: #1D4ED8;
+    --color-focus: #F59E0B;
+    
+    --fuente-titulos: 'Poppins', sans-serif;
+    --fuente-cuerpo: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--fuente-cuerpo);
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    min-height: 100vh;
+}
+
+
+.layout {
+    display: grid;
+    
+    grid-template-columns: 3fr 1fr;
+  
+    grid-template-rows: auto 1fr auto;
+   
+    grid-template-areas: 
+        "header header"
+        "main   aside"
+        "footer footer";
+    min-height: 100vh;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Asignación de elementos a las áreas de Grid */
+.header { grid-area: header; }
+.main   { grid-area: main; }
+.aside  { grid-area: aside; }
+.footer { grid-area: footer; }
+
+
+/* Flexbox */
+
+/* Header con Flexbox (Paso 7) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-superficie);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+/* Tarjetas de pasatiempos con Flexbox
+.pasatiempos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card-pasatiempo {
+    flex: 1 1 250px; /* Crece y se adapta responsivamente */
+    background-color: var(--color-fondo);
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #E2E8F0;
+}
+
+
+.aside {
+    background-color: var(--color-superficie);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style-type: square;
+    padding-left: 1.2rem;
+}
+
+
+.main {
+    background-color: var(--color-superficie);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.footer {
+    background-color: var(--color-superficie);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+h1, h2, h3 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+}
+
+h1 { font-size: 2rem; color: var(--color-primario); }
+h2 { font-size: 1.5rem; color: var(--color-secundario); margin-bottom: 0.75rem; }
+h3 { font-size: 1.2rem; color: var(--color-primario); }
+
+a:link { color: var(--color-enlace); text-decoration: underline; }
+a:visited { color: #6B21A8; }
+a:hover { color: var(--color-secundario); text-decoration: none; }
+a:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+
+img { max-width: 100%; height: auto; border-radius: 6px; display: block; }
+figure { margin: 1rem 0; }
+figcaption { font-size: 0.85rem; font-style: italic; color: #475569; text-align: center; }
+blockquote { border-left: 4px solid var(--color-primario); padding: 0.5rem 1rem; background: #F1F5F9; font-style: italic; }
+code { background: #E2E8F0; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; }
+
+
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "main"
+            "aside"
+            "footer";
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
