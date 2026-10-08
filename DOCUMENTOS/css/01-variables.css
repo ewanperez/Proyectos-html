@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
+:root {
+    --color-fondo: #F4F7F6;
+    --color-texto: #1A202C;
+    --color-primario: #00BFFF;
+    --color-acento: #c18fef;    
+    --color-tarjeta: #FFFFFF;
+
+    --font-principal: 'Inter', system-ui, sans-serif;
+    --font-titulos: 'Poppins', sans-serif;
+}
+
+.dark {
+    --color-fondo: #0F172A;
+    --color-texto: #F8FAFC;
+    --color-tarjeta: #1E293B;
+}

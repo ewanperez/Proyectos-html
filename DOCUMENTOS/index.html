@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Mateo, SemiDesarrollador FullStack.">
+    <title>Mateo Perez Flores</title>
+    
+    <link rel="stylesheet" href="css/00-reset.css">
+    <link rel="stylesheet" href="css/01-variables.css">
+    <link rel="stylesheet" href="css/02-tipografia.css">
+    <link rel="stylesheet" href="css/03-layout.css">
+    <link rel="stylesheet" href="css/04-componentes.css">
+    <link rel="stylesheet" href="css/05-utilidades.css">
+    <link rel="stylesheet" href="css/06-responsive.css">
+
+</head>
+<body>
+    <a href="#main" class="skip-link">Saltar al contenido</a>
+
+    <header>
+        <h1>Ewan Mateo</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="controles">
+            <button id="dark-mode-toggle">Modo Oscuro</button>
+            <button id="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main id="main">
+  
+        <section id="hero">
+            <img src="images/mifoto.jpg" alt="Foto profesional de Mateo">
+            <div class="info">
+                <h2>Hola, soy Ewan Mateo Perez Flores</h2>
+                <p>Un sitio web (Act. 1.12) Sobre mi</p>
+                <a href="#contacto">Hablemos</a>
+            </div>
+        </section>
+        
+  
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy actualmente estudiante del CECyT 3 de 5to semestre, me gusta la carrera de computacion... Soy una persona positiva y trato de mejorar cada dia. Con esta página busco platicar un poco acerca de mi, lo que me gusta y lo que he logrado a traves de este curso. Espero poder seguir aprendiendo aun mas y aprovechar cada recurso de esta materia.</p>
+        </section>
+        
+
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            
+
+            <article class="proyecto">
+                <img src="images/proyecto1.jpg" alt="Captura del proyecto 1">
+                <div class="info">
+                    <h3>mi-pagina-sobre-mi</h3>
+                    <p>Es un HTML con CSS aplicado a el, para poder añadir información justo "Sobre mi" (hermana de esta pagina)</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a href="https://github.com/ewanperez/Proyectos-html/tree/main/mi-pagina-sobre-mi">Ver Código</a>
+                </div>
+            </article>
+
+
+            <article class="proyecto">
+                <img src="images/proyecto2.jpg" alt="Captura del proyecto 2">
+                <div class="info">
+                    <h3>Mi primer examen de Portales</h3>
+                    <p>Aunque no es la mejor practica que he hecho, aprendi a no confiarme y exigirme mas para no reprobar jeje</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a href="https://github.com/ewanperez/Proyectos-html/tree/main/eva1.mx">Ver Código</a>
+                </div>
+            </article>
+
+
+            <article class="proyecto">
+                <img src="images/proyecto3.jpg" alt="Captura del proyecto 3">
+                <div class="info">
+                    <h3>Etiquetas</h3>
+                    <p>Fue de mis primeras paginas web, no destaca por su aspecto o funcion, pero da el inicio hacia el camino de un FullStack</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a href="https://github.com/ewanperez/Proyectos-html/tree/main/Etiquetas">Ver Código</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div>
+                <h3>Me llaman la atención...</h3>
+                <ul>
+                    <li>Las matemáticas y la Física</li>
+                    <li>La programación y la resolución de problemas logicos</li>
+                    <li>En proceso de ser un FullStack (Sin reprobar)</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/perez-flores-ewan-mateo-13123a442" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ewanperez" target="_blank">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mateo. Construido con HTML5, CSS y JavaScript. Hola Maestro Resendiz</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
